@@ -1,0 +1,27 @@
+# Python & Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+env/
+venv/
+.amazon_sales
+
+# OS
+.DS_Store
+
+# Secrets
+*.env
+.env
+
+# Data (DO NOT push raw data)
+Data/
+data_raw/
+*.csv
+*.parquet
+*.xlsx
+
+# Project-specific
+Reports/dashboard_screenshots/*.png
