@@ -108,19 +108,19 @@ notebooks/analysis.ipynb
 # 📊 Tableau Dashboard
 
 Dashboard files are located here:
-reports/tableau/AmazonSalesDsahboard.twb
+reports/tableau/AmazonSalesDashboard.twb
 
 ### **Dashboard Contains:**
   1.  KPI – Revenue Overview
-	2.	KPI – Total Orders
-	3.	KPI – Units Sold
-	4.	KPI – Average Order Value (AOV)
-	5.	Revenue Trend (Line Chart)
-	6.	Category Sales (Bar Chart)
-	7.	Pareto Analysis (Category-wise)
-	8.	Payment Method Revenue
-	9.	Delivery Status Breakdown
-	10.	Rating Distribution
+  2.  KPI – Total Orders
+  3.  KPI – Units Sold
+  4.  KPI – Average Order Value (AOV)
+  5.  Revenue Trend (Line Chart)
+  6.  Category Sales (Bar Chart)
+  7.  Pareto Analysis (Category-wise)
+  8.  Payment Method Revenue
+  9.  Delivery Status Breakdown
+  10.  Rating Distribution
 
 
 ### **Screenshots (if any) should be placed in:**
@@ -146,33 +146,6 @@ Located in:
 get_data.py    → Code to load or fetch dataset into local environment
 
 ---
-
-# 📂 Project Structure
-
-AMAZON SALES 2025/
-│
-├── .amazon_sales/                # Auto-generated folder (internal use)
-│
-├── data/                         # Local-only dataset 
-│   ├── raw/
-│   ├── processed/
-│   └── README.md                 # Dataset schema & instructions
-│
-├── notebooks/
-│   ├── analysis.ipynb            # Main end-to-end analysis notebook
-│   └── create_db.ipynb           # Database / table creation exploration
-│
-├── reports/
-│   └── tableau/                  # Tableau workbook and screenshots
-│
-├── src/
-│   └── get_data.py               # Script to load data
-│
-├── .gitignore                    # Excludes data & system files
-└── README.md                     # Project Structure & Analysis breifing. 
-
----
-
 # 📈 Summary of Key Insights
 
 - Revenue was **consistently stable** over the period  
@@ -192,21 +165,21 @@ AMAZON SALES 2025/
 git clone https://github.com/<your-username>/amazon-sales-analytics.git
 cd amazon-sales-analytics 
 
-2. Set up Virtual Environment
+## 2. Set up Virtual Environment
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt 
 
-3. Add the Dataset
+## 3. Add the Dataset
 Place your CSV in:
 data/raw/
 
-4. Open Notebook
+## 4. Open Notebook
 jupyter lab 
 
-Run: 
+## Run: 
 notebooks/analysis.ipynb 
-
+```
 
 # 🤝 Connect With Me
 
