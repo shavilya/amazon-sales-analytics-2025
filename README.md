@@ -1,4 +1,4 @@
-# 📊 Amazon Sales Analytics 2025 — End-to-End Data Analysis Project  
+# 📊 E-Commerce Revenue & Supply Chain Optimization — End-to-End Data Analysis Project  
 ### **By: Shavilya | Data Analyst**
 
 This repository contains a complete **end-to-end data analytics project** built on an Amazon Sales dataset (15,000+ orders).  
