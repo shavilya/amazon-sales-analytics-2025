@@ -1,193 +1,202 @@
-# 📊 E-Commerce Revenue & Supply Chain Optimization — End-to-End Data Analysis Project  
-### **By: Shavilya | Data Analyst**
+# 📊 E-Commerce Revenue & Supply Chain Optimization  
+### **End-to-End Data Analysis Project**  
+**By: Shavilya | Data Analyst**
 
-This repository contains a complete **end-to-end data analytics project** built on an Amazon Sales dataset (15,000+ orders).  
-The project focuses on **sales performance analysis, product insights, payment trends, delivery behavior, customer ratings, and Tableau dashboarding** — following the same analytical workflow used by teams at **Accenture, Fractal Analytics, Mu Sigma, TCS**, and other leading analytics firms.
+This repository contains a complete **end-to-end data analytics project** built on an **Amazon Sales dataset (15,000+ orders)**.
+
+The project focuses on **sales performance analysis, product insights, payment trends, delivery behavior, customer ratings, and Tableau dashboarding** — following the same analytical workflow used by analytics teams at **Accenture, Fractal Analytics, Mu Sigma, TCS**, and similar firms.
 
 ---
 
-# 🚀 Project Overview
+## 📊 Tableau Dashboard Snapshot
+
+<img width="2598" height="1798" alt="Amazon_Sales_Dashboard" src="https://github.com/user-attachments/assets/49f74c2a-6e3f-4486-a8cc-a44e6c946c94" />
+
+
+🔗 **Interactive Dashboard (Tableau Public):**  
+https://public.tableau.com/views/Amazon_Sales_Dashboard_17683901017380/Amazon_Sales_Dashboard
+
+---
+
+## 🚀 Project Overview
 
 The goal of this project is to:
 
 - Clean, prepare, and understand raw e-commerce sales data  
 - Explore sales, product, customer, and operational patterns  
 - Build visual analytics using Tableau  
-- Generate insights that can help improve revenue, logistics, and customer satisfaction  
-- Organize everything in a clean, reproducible project structure  
+- Generate insights to improve **revenue, logistics, and customer satisfaction**  
+- Maintain a **clean, reproducible analytics workflow**
 
-This project covers the full lifecycle:
-
+**Project Lifecycle:**  
 **Raw Data → Cleaning → EDA → Visualization → Insights → Recommendations**
 
 ---
 
-# 📦 Dataset Overview
+## 📦 Dataset Overview
 
-The dataset (stored locally in the `data/` directory, not pushed to GitHub) contains:
+The dataset (stored locally in the `data/` directory and not pushed to GitHub) includes:
 
 - **Orders**  
-- **Products & categories**  
+- **Products & Categories**  
 - **Customer IDs**  
-- **Quantity & pricing**  
-- **Payment method**  
-- **Delivery status**  
-- **Review ratings & text**  
-- **State & country**
+- **Quantity & Pricing**  
+- **Payment Method**  
+- **Delivery Status**  
+- **Review Ratings & Text**  
+- **State & Country**
 
-Total columns: **14**  
-Total rows: **~15,000**
+**Total Columns:** 14  
+**Total Rows:** ~15,000  
 
-A schema and sample row are documented in:
-data/README.md 
+📄 Schema & sample rows:  
+`data/README.md`
 
 ---
 
-# 🧹 Data Preparation
+## 🧹 Data Preparation
 
 Performed primarily in **`notebooks/analysis.ipynb`**:
 
 - Converted `Date` to datetime format  
 - Extracted `Year`, `Month`, `Day`  
-- Verified `Total_Sales_INR = Quantity × Unit_Price_INR`  
-- Handled missing review ratings/text  
-- Created key derived metrics:
-  - `AOV` (Average Order Value)  
-  - `Revenue_per_Order`  
-  - `Delivery_Success_Rate`  
+- Validated `Total_Sales_INR = Quantity × Unit_Price_INR`  
+- Handled missing review ratings and text  
+- Created derived metrics:
+  - **AOV (Average Order Value)**  
+  - **Revenue_per_Order**  
+  - **Delivery_Success_Rate**
 
 ---
 
-# 📊 Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
-All core analysis is inside:
-notebooks/analysis.ipynb
+All analysis is documented in:  
+`notebooks/analysis.ipynb`
 
-### Key analyses completed:
-
-### 🔹 **1. Sales & Revenue Analysis**
+### 🔹 1. Sales & Revenue Analysis
 - Total Revenue  
 - Total Orders  
 - Units Sold  
 - Average Order Value (AOV)  
-- Daily/Monthly revenue trends  
+- Daily & Monthly revenue trends  
 
-### 🔹 **2. Category Performance**
-- Revenue by Product Category  
-- Quantity Sold by Category  
-- **Pareto Analysis**: Top 4 categories ≈ 80% of total revenue  
-- Identification of high-performing & underperforming segments  
+### 🔹 2. Category Performance
+- Revenue by product category  
+- Quantity sold by category  
+- **Pareto Analysis:** Top 4 categories ≈ 80% of revenue  
+- Identification of high- and low-performing segments  
 
-### 🔹 **3. Product-Level Insights**
+### 🔹 3. Product-Level Insights
 - Top 10 best-selling products  
-- Bottom 10 products needing improvement  
-- Price vs Rating patterns  
+- Bottom 10 underperforming products  
+- Price vs rating relationships  
 - High-volume but low-rated product clusters  
 
-### 🔹 **4. Payment Method Analysis**
-- Payment method distribution  
-- Revenue contribution by method  
-- Return/cancellation behavior vs payment type  
+### 🔹 4. Payment Method Analysis
+- Revenue contribution by payment method  
 - COD vs prepaid comparison  
+- Return and cancellation behavior by payment type  
 
-### 🔹 **5. Delivery & Operations Analysis**
-- Delivered vs Returned orders  
-- Category-wise return rate  
+### 🔹 5. Delivery & Operations Analysis
+- Delivered vs returned orders  
+- Category-wise return rates  
 - State-wise delivery performance  
-- Relationship between delivery delays and low ratings  
+- Delivery delays vs customer ratings  
 
-### 🔹 **6. Customer Review & Rating Analysis**
+### 🔹 6. Customer Review & Rating Analysis
 - Rating distribution  
-- Top 10 highest-rated products  
-- Lowest-rated products  
-- Basic text analysis on `Review_Text`  
-- Impact of delivery issues on rating score  
+- Highest and lowest-rated products  
+- Basic text analysis on reviews  
+- Impact of delivery issues on ratings  
 
 ---
 
-# 📊 Tableau Dashboard
+## 📊 Tableau Dashboard Details
 
-Dashboard files are located here:
-reports/tableau/AmazonSalesDashboard.twb
+📁 **File Location:**  
+`reports/tableau/AmazonSalesDashboard.twb`
 
-### **Dashboard Contains:**
-  1.  KPI – Revenue Overview
-  2.  KPI – Total Orders
-  3.  KPI – Units Sold
-  4.  KPI – Average Order Value (AOV)
-  5.  Revenue Trend (Line Chart)
-  6.  Category Sales (Bar Chart)
-  7.  Pareto Analysis (Category-wise)
-  8.  Payment Method Revenue
-  9.  Delivery Status Breakdown
-  10.  Rating Distribution
+### Dashboard Includes:
+1. KPI – Total Revenue  
+2. KPI – Total Orders  
+3. KPI – Units Sold  
+4. KPI – Average Order Value (AOV)  
+5. Revenue Trend (Line Chart)  
+6. Category Sales Distribution  
+7. Pareto Analysis (Category-wise)  
+8. Payment Method Revenue  
+9. Delivery Status Breakdown  
+10. Rating Distribution  
 
-
-### **Screenshots (if any) should be placed in:**
-reports/tableau/AmazonSalesDashboard.png
+📸 **Dashboard Image:**  
+`reports/tableau/AmazonSalesDashboard.png`
 
 ---
 
-# 🧰 Tools & Technologies Used
+## 🧰 Tools & Technologies Used
 
-### **Languages**
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- SQL  
-- Tableau Calculated Fields  
+### Languages
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
+- **SQL**  
+- **Tableau Calculated Fields**
 
-### **Tools**
+### Tools
 - Jupyter Notebook  
 - Tableau  
 - Excel  
 - Git & GitHub  
 
-### **Scripts**
-Located in:
-get_data.py    → Code to load or fetch dataset into local environment
-
----
-# 📈 Summary of Key Insights
-
-- Revenue was **consistently stable** over the period  
-- All product categories showed **balanced contribution**  
-- **Top 4 categories generated ~80% revenue** (Pareto)  
-- COD orders showed **higher cancellation/return rates**  
-- Delivery delays strongly correlated with **lower ratings**  
-- Highly rated products showed **1.8× higher repeat purchase potential**  
-- Certain categories had disproportionately high return rates  
+### Scripts
+- `get_data.py` → Loads or fetches the dataset into the local environment  
 
 ---
 
-# ▶️ How to Run This Project
+## 📈 Summary of Key Insights
 
-### 1. Clone the Repo  
+- Revenue remained **stable across the analysis period**  
+- Product categories showed **balanced revenue contribution**  
+- **Top 4 categories generated ~80% of total revenue**  
+- COD orders had **higher return and cancellation rates**  
+- Delivery delays strongly correlated with **lower customer ratings**  
+- Highly rated products showed **~1.8× higher repeat purchase potential**  
+- Certain categories exhibited **disproportionately high return rates**
+
+---
+
+## ▶️ How to Run This Project
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/<your-username>/amazon-sales-analytics.git
-cd amazon-sales-analytics 
-
-## 2. Set up Virtual Environment
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt 
-
-## 3. Add the Dataset
-Place your CSV in:
-data/raw/
-
-## 4. Open Notebook
-jupyter lab 
-
-## Run: 
-notebooks/analysis.ipynb 
+cd amazon-sales-analytics
 ```
 
-# 🤝 Connect With Me
+### 2️⃣ Set Up Virtual Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-### LinkedIn:
-https://www.linkedin.com/in/shavilya-rajput-9674141a0/
+### 3️⃣ Add Dataset
+Place the CSV file in:
+```
+data/raw/
+```
 
-### GitHub:
-https://github.com/shavilya
+### 4️⃣ Run the Analysis
+```bash
+jupyter lab
+```
+Open and run:
+```
+notebooks/analysis.ipynb
+```
 
-# 📜 License 
-<b>MIT License.</b>
+---
+
+## 🤝 Connect With Me
+
+**LinkedIn:**  
+https://www.linkedin.com/in/shavilya-rajput-96741
